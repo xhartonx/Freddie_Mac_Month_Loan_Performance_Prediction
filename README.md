@@ -75,7 +75,7 @@ This project, in partnership with Freddie Mac, aims to predict loan transitions 
 
 ## Findings & Insights
 - **Overall Model Accuracy**: **62%**
-<img width="500" alt="accuracy" src="https://github.com/xhartonx/Freddie_Mac_Month_Loan_Performance_Prediction/blob/main/asset/model%20performence.jpg">
+<img width="500" alt="accuracy" src="https://github.com/xhartonx/Freddie_Mac_Month_Loan_Performance_Prediction/blob/main/asset/performence.jpg">
 
 - **Best Performance**: Predicting transitions from **status 2 to status 3**.
 - **Worst Performance**: Predicting transitions to **status 1**.
