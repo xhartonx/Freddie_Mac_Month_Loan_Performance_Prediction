@@ -17,31 +17,21 @@ This project, in partnership with Freddie Mac, aims to predict loan transitions 
 ---
 
 ## Data Highlights
-### Primary Datasets
-- **Freddie Mac Single Family Loan-Level Dataset**
-   - **Standard Origination Data (1999-2024)**: 40+ million rows & 32 columns.
-   - **Standard Monthly Performance Data (1999-2024)**: 2000+ million rows & 32 columns.
-   - **Source**: [Loan-Level Dataset](https://www.freddiemac.com/research/datasets/sf-loanlevel-dataset)
-### Supplemental Data Datasets
-- **Freddie Mac House Price Index (FMHPI)** – 260k rows & 7 columns.
-   - **Source**: [FMHPI Dataset](https://www.freddiemac.com/research/indices/house-price-index)
-   - **Importance**: Indicators of housing market trends and economic conditions.
+### Data Sources
+- **Primary Dataset**: Single Family Loan-Level Dataset ([Freddie Mac](https://www.freddiemac.com/research/datasets/sf-loanlevel-dataset))
+  - Standard Origination Data (1999–2024): 40+ million rows
+  - Standard Monthly Performance Data (1999–2024): 2000+ million rows
+- **Supplemental Data:**
+  - [Freddie Mac House Price Index (FMHPI)](https://www.freddiemac.com/research/indices/house-price-index): 260k rows
+  - [California Unemployment Rate Data](https://data.ca.gov/dataset/civilian-unemployment-rate-for-us-and-california)
 
-- **Unemployment Rate Data**
-   - **Source**: [California Unemployment Data](https://data.ca.gov/dataset/civilian-unemployment-rate-for-us-and-california)
-   - **Importance**: Proxy for economic health and its relation to delinquency risk.
-
-
-### Data Cleaning & Processing
-- **Missing Value Handling**
-  - Numerical data: Median/mode replacement.
-  - Categorical data: Mode or domain knowledge-based placeholders.
-- **Data Consistency Adjustments**
-  - ELTV values missing before 2017 were filled based on other loan-to-value ratios.
-  - Date formats standardized to 'YYYY-MM'.
-- **Filtering**
-  - Focused on delinquency status of **60 days past due**.
-  - Removed non-California records and duplicate entries.
+### Key Data Preparation Steps
+- **Data Cleaning:**
+  - Handled missing values using median/mode or related variables.
+  - Standardized feature definitions across years.
+- **Feature Selection:**
+  - Focused on records where delinquency status equals 2 (over 60 days past due).
+  - Generated approximately 480k records by including corresponding next-month records.
 
 ---
 
@@ -115,9 +105,3 @@ This project, in partnership with Freddie Mac, aims to predict loan transitions 
 6. **Financial Counseling & Education**
    - Help borrowers understand financial impacts during economic downturns.
 
----
-
-## Credits
-This presentation template was created by **Slidesgo**, with icons by **Flaticon**, and infographics/images by **Freepik**.
-
-**Thank You!**
