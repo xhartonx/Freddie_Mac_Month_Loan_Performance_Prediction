@@ -32,6 +32,8 @@ This project, in partnership with Freddie Mac, aims to predict loan transitions 
 - **Feature Selection:**
   - Focused on records where delinquency status equals 2 (over 60 days past due).
   - Generated approximately 480k records by including corresponding next-month records.
+ <img width="650" alt="feature selection" src="https://github.com/xhartonx/Freddie_Mac_Month_Loan_Performance_Prediction/blob/main/asset/feature%20selection.jpg">
+ 
 - **Feature Engineering:**
   - Created features like LTV_Difference, Loan_Age_Percentage, and dynamic unemployment rate changes.
 ---
@@ -63,8 +65,12 @@ This project, in partnership with Freddie Mac, aims to predict loan transitions 
 
 ## Findings & Insights
 - **Overall Model Accuracy**: **62%**
+<img width="500" alt="accuracy" src="https://github.com/xhartonx/Freddie_Mac_Month_Loan_Performance_Prediction/blob/main/asset/model%20performence.jpg">
+
 - **Best Performance**: Predicting transitions from **status 2 to status 3**.
 - **Worst Performance**: Predicting transitions to **status 1**.
+<img width="500" alt="confusion matrix" src="https://github.com/xhartonx/Freddie_Mac_Month_Loan_Performance_Prediction/blob/main/asset/confusion%20matrix.jpg">
+
 
 ### COVID-19 Impact
 - **Prediction Mismatch (April-July 2020)**
