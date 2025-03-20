@@ -32,7 +32,8 @@ This project, in partnership with Freddie Mac, aims to predict loan transitions 
 - **Feature Selection:**
   - Focused on records where delinquency status equals 2 (over 60 days past due).
   - Generated approximately 480k records by including corresponding next-month records.
-
+- **Feature Engineering:**
+  - Created features like LTV_Difference, Loan_Age_Percentage, and dynamic unemployment rate changes.
 ---
 
 ## Model Description
@@ -48,12 +49,6 @@ This project, in partnership with Freddie Mac, aims to predict loan transitions 
 2. **Interpretability** – Provides coefficient insights useful for business decisions.
 3. **Computational Efficiency** – Less resource-intensive than Random Forest or XGBoost.
 4. **Overfitting Risk Reduction** – Lower risk compared to complex ensemble models.
-
-### Feature Engineering
-- **LTV Difference** = Estimated Loan-to-Value (ELTV) - Original Combined Loan-to-Value (CLTV).
-- **Loan Age Percentage** = Loan Age / (Remaining Months to Maturity + 1e-6).
-- **Debt-to-Income (DTI) Categorization** = 'Low', 'Middle', 'High', or 'Very High'.
-- **Unemployment Rate % Change** = Monthly percentage change in unemployment rate.
 
 ### Training Process
 1. **Data Splitting**
