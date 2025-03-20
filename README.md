@@ -76,10 +76,23 @@ This project, in partnership with Freddie Mac, aims to predict loan transitions 
 - **Prediction Mismatch (April-July 2020)**
   - The model predicted an **increase** in **status 2** loans.
   - In reality, **status 2 loans decreased**, while **status 3 increased**.
+<img width="550" alt="confusion matrix" src="https://github.com/xhartonx/Freddie_Mac_Month_Loan_Performance_Prediction/blob/main/asset/status%202%20increase.jpg">
+<img width="550" alt="confusion matrix" src="https://github.com/xhartonx/Freddie_Mac_Month_Loan_Performance_Prediction/blob/main/asset/status%203%20increase.jpg">
+
 - **Unemployment Rate Surge**
-  - The rapid increase in unemployment was not captured effectively by pre-2019 trained models.
+  - The rapid increase in unemployment was not captured well by models trained prior to 2019.
+<img width="550" alt="confusion matrix" src="https://github.com/xhartonx/Freddie_Mac_Month_Loan_Performance_Prediction/blob/main/asset/uneployment%20rate.jpg">
+ 
 - **Unexpected Borrower Trends**
   - A higher proportion of "Very Good" and "Exceptional" credit score borrowers transitioned to status 3 during COVID-19.
+<img width="550" alt="confusion matrix" src="https://github.com/xhartonx/Freddie_Mac_Month_Loan_Performance_Prediction/blob/main/asset/credit%20score.jpg">
+
+### Summary
+1. The model underperformed during the COVID-19 pandemic (April–July 2020), likely due to its reliance on pre-2019 data, which did not account for the sudden unemployment surge.
+2. Loans shifting from status 2 to status 3 during the pandemic included more borrowers with "Very Good" and "Exceptional" credit scores than before COVID.
+
+   **Hypothesis:** High-income borrowers with expensive homes often have high spending habits, making them vulnerable to sudden economic changes. Their defaults pose a 
+   greater risk to Freddie Mac due to larger loan amounts.
 
 ---
 
