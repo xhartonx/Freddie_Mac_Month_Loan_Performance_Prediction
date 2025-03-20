@@ -36,6 +36,16 @@ This project, in partnership with Freddie Mac, aims to predict loan transitions 
  
 - **Feature Engineering:**
   - Created features like LTV_Difference, Loan_Age_Percentage, and dynamic unemployment rate changes.
+ 
+- ### Current Loan Delinquency Status *(Supplementary Information)*
+  - Each loan is assigned a **status** based on its delinquency level, for examples:
+
+    - **Status 0** = Current or less than 30 days delinquent
+    - **Status 1** = 30-59 days delinquent
+    - **Status 2** = 60-89 days delinquent
+    - **Status 3** = 90-119 days delinquent
+    - **...** = Further delinquency stages
+    - **Status RA** = REO Acquisition
 ---
 
 ## Model Description
